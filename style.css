@@ -3,26 +3,37 @@
 }
 
 #h-ctr h1 {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-size: 7em;
+    font-family: 'Inter', serif;
+    font-weight: 700;
+    font-variation-settings: "wght" 700;
+    font-size: 5em;
     margin: 0;
     line-height: 1;
     margin-right: 0.1em;
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     background: #000;
     color: #fff;
     margin: 0;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
-#h-ctr p {
-    font-weight: 400;
-    margin: 0;
-    line-height: 1;
+#h-ctr {
+    /* height: 5rem; */
+}
+
+img#logo {
+    /* height: 100%; */
+    /* color: black; */
+    /* background-color: black; */
+}
+
+#logo-text {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
 }
 
 a {
@@ -57,7 +68,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: baseline;
     gap: 0.5em;
     width: 100%;
 }
@@ -70,7 +80,7 @@ a {
 
 #caption a {
     font-size: 0.5em;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     text-align: right;
@@ -95,4 +105,62 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#comments {
+    padding: 2em;
+}
+
+#h-ctr {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5em;
+    width: 100%;
+    height: 7rem;
+    /* Set a specific height */
+}
+
+#logo {
+    height: 60%;
+    /* height: 60%; */
+    /* Make the logo height 100% of its container */
+    width: auto;
+    /* Maintain aspect ratio */
+}
+
+#logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+}
+
+#h-ctr h1 {
+    font-family: 'Inter', serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    /* Adjust font size to fit the container */
+    margin: 0;
+    line-height: 1;
+}
+
+#h-ctr span {
+    font-size: 0.8em;
+    /* Adjust as needed */
+}
+
+#logo-container {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    /* background-color: #fff; */
+    /* Or any color you prefer */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    border: 1px solid white;
 }
