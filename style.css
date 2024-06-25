@@ -61,7 +61,7 @@ a {
     align-items: center;
     height: 100vh;
     gap: 2em;
-    padding: 2em;
+    padding: 1em;
 }
 
 #h-ctr {
@@ -108,7 +108,9 @@ a {
 }
 
 #comments {
-    padding: 2em;
+    padding: 1em;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 #h-ctr {
